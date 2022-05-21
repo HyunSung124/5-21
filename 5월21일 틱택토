@@ -1,0 +1,26 @@
+a = ["","","","","","","","","",""]
+import random
+def p(a):
+    print(a[1],"|",a[2],"|",a[3])
+    print("ㅡ","ㅡ","ㅡ")
+    print(a[4],"|",a[5],"|",a[6])
+    print("ㅡ","ㅡ","ㅡ")
+    print(a[7],"|",a[8],"|",a[9])
+p(a)
+while True:
+    while True:
+        x = int(input())
+        if a[x] == "":
+            a[x] = 'x'
+            break
+    p(a)
+    while True:
+        o = random.randrange(1,10)
+        if a[o] == "":
+            a[o] = 'o'
+            break
+    p(a)
+    if a[1]==a[2]==a[3] == 'o':
+    if a[4]==a[5]==a[6] == 'o':
+    if a[7] == a[8] == a[9] == 'o':
+        print("WIN!")
